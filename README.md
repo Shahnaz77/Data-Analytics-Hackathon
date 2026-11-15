@@ -16,11 +16,7 @@ Short answer: old Gen1 chargers in hot cities, a bad batch of Kyron batteries, a
 
 ## How to run
 ```bash
-python3 -m venv .venv && .venv/bin/pip install pandas pyarrow duckdb matplotlib statsmodels plotly jupyter jupytext python-docx
-.venv/bin/jupyter nbconvert --to notebook --execute --inplace VoltRelay_Analysis.ipynb
-.venv/bin/python analysis/build_dashboard.py
-.venv/bin/python analysis/build_report.py
-cd deck && npm install && NODE_PATH=$PWD/node_modules node build_deck.js
+Run the VoltRelay_Analysis.ipynb file
 ```
 Put the CSVs in `HackathonData/Hackathon Data Set _ Gradient/` (or just leave `HackathonData.zip` next to the notebook). For Google Colab, see `COLAB_SETUP.md`.
 
